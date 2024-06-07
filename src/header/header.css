@@ -1,0 +1,48 @@
+.header, .nac {
+    background-color: rgba(198, 126, 49, 1);
+    display: flex;
+    justify-content: space-around;
+
+
+    width: 100%;
+    height: 100px;
+
+    font-family: "./PT-mono-Blode.web";
+    text-align: left;
+    vertical-align: middle;
+}
+
+
+
+.nac a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    border: 2px solid #8C4900; /* Цвет рамки */
+    padding: 5px 40px; /* Отступы внутри рамки (10px сверху и снизу, 20px слева и справа) */
+    display: inline-block; /* Разрешает тексту обтекать прямоугольник */
+    background-color: #8C4900; /* Цвет заливки */
+    border-radius: 3px; /* Радиус скругления углов */
+}
+img{
+    justify-content: center; 
+    height: 75%;
+    margin: auto;
+    margin-left: 2%;
+}
+.left-text {
+    /* text-align: left; Выравнивание текста по левому краю */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 2;
+}
+
+.right-text {
+    /* text-align: right; Выравнивание текста по правому краю */
+    display: flex;
+    flex: 1;
+    padding-right: 2%;
+    /* align-items: right; */
+    justify-content: right;
+    
+}
