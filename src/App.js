@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import logo from './mini.jpeg';
 import './App.css';
 import avatar from './img.jpeg';
 import Menu from './menu';
