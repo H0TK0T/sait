@@ -1,5 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import {
+  BrowserRouter as Router, Route, Routes, useLocation,
+} from 'react-router-dom';
 import './App.css';
 import avatar from './img.jpeg';
 import Menu from './menu';
@@ -8,8 +10,7 @@ import Offers from './offers';
 import Reviews from './reviews';
 import Navbar from './components/Navbar';
 
-
-const Content = () => {
+function Content() {
   const location = useLocation();
   const isMenuPage = location.pathname === '/menu';
   const isContactsPage = location.pathname === '/contacts';
@@ -43,25 +44,24 @@ const Content = () => {
       </div>
     </div>
   );
-};
+}
 
-
-const App = () => {
+function App() {
   return (
     <Router>
       <div className="landing-container">
         <Navbar />
-        <Content /> 
+        <Content />
         <Routes>
 
-          <Route path='/menu' element={<Menu />} />
-          <Route path='/offers' element={<Offers />} />
-          <Route path='/contacts' element={<Contacts />} />
-          <Route path='/reviews' element={<Reviews />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/offers" element={<Offers />} />
+          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/reviews" element={<Reviews />} />
         </Routes>
       </div>
     </Router>
   );
-};
+}
 
 export default App;

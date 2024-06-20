@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from './avatar.png'
+import avatar from './avatar.png';
 
 const reviewsData = [
   {
@@ -37,11 +37,10 @@ const reviewsData = [
       'Мне очень понравилось, что в кофейне предлагают разнообразные сорта кофе. Кофейня “CoffeDon” расположена в прекрасном месте. Здесь можно насладиться не только вкусным кофе, но и прекрасной атмосферой. Особенно рекомендую посетить кофейню в вечернее время, когда город погружается в темноту. Регулярно прихожу сюда на встречи с друзьями!',
     image: avatar,
   },
-  
+
 ];
 
-
-const Reviews = () => {
+function Reviews() {
   return (
     <div className="reviews-container">
       <h2>Отзывы</h2>
@@ -56,6 +55,6 @@ const Reviews = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Reviews;

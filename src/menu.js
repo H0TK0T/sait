@@ -9,13 +9,13 @@ import Flats from './flat.png';
 const drinks = [
   { name: 'Эспрессо', price: '150', image: Cap },
   { name: 'Американо', price: '170', image: Americano },
-  { name: 'Капучино', price: '200', image: Cap},
+  { name: 'Капучино', price: '200', image: Cap },
   { name: 'Латте', price: '210', image: Latte },
   { name: 'Маккиато', price: '180', image: Moca },
   { name: 'Флэт Уайт', price: '190', image: Flats },
 ];
 
-const Menu = () => {
+function Menu() {
   return (
     <div className="reviews-container">
       <h2>Меню</h2>
@@ -24,12 +24,16 @@ const Menu = () => {
           <div key={index} className="review-card">
             <img src={drink.image} alt={drink.name} className="round-image" />
             <h3>{drink.name}</h3>
-            <p>{drink.price} руб.</p>
+            <p>
+              {drink.price}
+              {' '}
+              руб.
+            </p>
           </div>
         ))}
       </div>
     </div>
   );
-};
+}
 
 export default Menu;
