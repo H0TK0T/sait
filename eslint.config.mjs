@@ -15,5 +15,4 @@ export default [
   {languageOptions: { globals: globals.browser },
   plugins: {pluginReactConfig}},
   ...compat.extends("airbnb"),
-  // pluginReactConfig,
 ];
